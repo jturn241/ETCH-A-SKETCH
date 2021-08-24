@@ -1,6 +1,8 @@
 h1 {
     text-align:center;
     padding-top: 10px;
+    color: gold;
+    font-size: 50px;
 }
 
 :root {
@@ -9,12 +11,18 @@ h1 {
     background-color: tomato;
 }
 
+#outterBox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 #container {
-    display: grid;
+    display: inline-grid;
     grid-template-rows: repeat(var(--grid-rows), 0fr);
     grid-template-columns: repeat(var(--grid-cols), 0fr);
-    justify-content: center;
-    padding-top: 10px;
+    /*justify-content: center;
+    align-items: center;*/   
 }
 
 .grid-item {
@@ -23,10 +31,21 @@ h1 {
     text-align: center;
     width: 1px;
     height: 1px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     background-color: white;
 }
 
 .final {
     background-color: yellowgreen;
+}
+
+.clear {
+    background-color: white;
+}
+
+
+#reset {
+    height: 20px;
+    justify-content: space-around;
 }
