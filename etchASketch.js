@@ -9,18 +9,23 @@ function makeRows(rows, cols) {
     }
 } 
 
+function gridDraw() {
+    const squares = document.querySelectorAll("divs");
+    squares.forEach(function(squares) {
+        squares.addEventListener("mouseenter", () => {
+            squares.classList.add('final');
+        });
+    });
+};
+
 makeRows(16, 16);
 
-const squares = document.querySelectorAll("divs");
-
-squares.forEach(function(squares) {
-    squares.addEventListener("mouseenter", () => {
-        squares.classList.add('final');
-    });
-});
-
+gridDraw();
 
 function reset () {
     let papa = document.getElementById("container")
     papa.querySelectorAll('*').forEach(n => n.remove());
+    let x = prompt("Please enter grid size of 100 or less")
+    makeRows(x, x);
+    gridDraw();
 };

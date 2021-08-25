@@ -29,8 +29,8 @@ h1 {
     padding: 1em;
     /*border: .01px solid black;*/
     text-align: center;
-    width: 1px;
-    height: 1px;
+    width: .5px;
+    height: .5px;
     display: flex;
     justify-content: center;
     background-color: white;
