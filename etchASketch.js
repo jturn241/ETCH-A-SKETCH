@@ -25,7 +25,10 @@ gridDraw();
 function reset () {
     let papa = document.getElementById("container")
     papa.querySelectorAll('*').forEach(n => n.remove());
-    let x = prompt("Please enter grid size of 100 or less")
+    let x = parseInt(prompt("Please enter grid size of 100 or less"));
+    while(!Number.isInteger(x)) {
+        x = parseInt(prompt("Please enter a valid number"));
+    };
     makeRows(x, x);
-    gridDraw();
+    gridDraw(); 
 };

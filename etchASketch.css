@@ -21,8 +21,6 @@ h1 {
     display: inline-grid;
     grid-template-rows: repeat(var(--grid-rows), 0fr);
     grid-template-columns: repeat(var(--grid-cols), 0fr);
-    /*justify-content: center;
-    align-items: center;*/   
 }
 
 .grid-item {
