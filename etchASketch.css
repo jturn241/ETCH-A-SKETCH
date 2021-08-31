@@ -58,3 +58,9 @@ li {
     font-size: 20px;
     background-color: white;
 }
+
+.footer {
+    float: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10px;
+}
