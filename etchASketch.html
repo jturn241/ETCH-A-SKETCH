@@ -6,16 +6,21 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="etchASketch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet"> 
     <script defer src="etchASketch.js"></script> 
 </head>
 
 <body>
 <div>
-    <h1>Etch-a-sketch</h1>
-    <button id="reset"onclick="reset()">Reset Grid</button> 
-      <div id="container"></div>
-    
-    
+    <h1>Mouse-O-Sketch</h1>   
+    <div id="container"></div>
+    <ul>
+        <li><button class = btn onclick="reset()">Reset grid</button></li>
+        <li><button class = btn onclick="randomColorReset()">Random color reset</button></li>
+        <li><button class = btn onclick ="eraser()">Eraser</button></li>
+    </ul>
 </div>
 </body>
 </html>
