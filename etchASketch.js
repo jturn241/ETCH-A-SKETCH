@@ -12,8 +12,8 @@ function makeRows(rows, cols) {
 function gridDraw() {
     const squares = document.querySelectorAll("divs");
     squares.forEach(function(squares) {
-        squares.addEventListener("mouseenter", () => {
-            squares.classList.add('final');
+        squares.addEventListener("mouseenter", function() {
+            this.style.backgroundColor = "slategray";
         });
     });
 };
@@ -49,8 +49,8 @@ function eraser() {
     clearTimeout(stopColor);
     const squares = document.querySelectorAll("divs");
     squares.forEach(function(squares) {
-        squares.addEventListener("mouseenter", () => {
-            squares.classList.add('clear');
+        squares.addEventListener("mouseenter", function() {
+            this.style.backgroundColor = "white";
         });
     });
 };

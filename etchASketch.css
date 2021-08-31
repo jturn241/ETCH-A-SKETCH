@@ -1,9 +1,10 @@
 h1 {
     text-align:center;
-    color: gold;
+    color: whitesmoke;
     font-weight: bold;
     font-size: 40px;
-    font-family: 'ZCOOL KuaiLe';
+    font-family: 'Euphoria Script', cursive;
+    text-shadow: 2px 2px silver
 }
 
 :root {
@@ -17,10 +18,10 @@ h1 {
     display: grid;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    min-width: 450px;;
-    min-height: 450px;;
-    max-width: 450px;;
-    min-width: 450px;; 
+    min-width: 450px;
+    min-height: 450px;
+    max-width: 450px;
+    min-width: 450px; 
     margin: 0 auto;
     grid-row-gap: 0;
     border: 3px gold solid;
@@ -45,13 +46,15 @@ ul {
     align-items: center;
     list-style: none;
     padding-left: 0;
+    padding-top: 10px;
 }
 
 li {
-    margin: auto 20px;
+    margin: auto 46px;
 }
 
 .btn {
     font-family: 'Oswald';
     font-size: 20px;
+    background-color: white;
 }
